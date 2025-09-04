@@ -1,0 +1,26 @@
+/* Add this CSS to your stylesheet */
+.input__box {
+    position: relative;
+}
+
+input[type="password"] {
+    padding-right: 30px;
+    /* Make space for the eye icon */
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #666;
+    /* Adjust the color as needed */
+}
+
+/* Style the eye icon when the password is visible */
+input[type="password"].visible+.eye {
+    color: #007bff;
+    /* Change the color to indicate password visibility */
+}

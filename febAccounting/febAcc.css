@@ -1,0 +1,68 @@
+/* add button div */
+#hd {
+    position: relative;
+    top: 7vh;
+    display: flex;
+    justify-content: space-between;
+    width: 77vw;
+}
+
+#hd span {
+    cursor: pointer;
+}
+
+.alert {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.user__details {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin: 10px 0 2px 0;
+    color: var(--color-dark);
+    width: 78vw;
+    position: relative;
+    /* top: 3vh; */
+    /* border: 2px solid black; */
+}
+
+.user__details .input__box {
+    width: calc(100% / 5 - 20px);
+    /* margin-bottom: 15px; */
+}
+
+.user__details .input__box .details {
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    display: block;
+}
+
+.user__details .input__box input {
+    /* margin-left: 5vw; */
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-grey);
+    padding-left: 15px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
+}

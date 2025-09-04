@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    background-image: url(../imgs/background.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container1 #hd{
+    color: azure;
+    text-align: center;
+    position: absolute;
+    top: 5vh;
+    left: 38vw;
+    font-size: 45px;
+}
+
+.container #codehead {
+    color: azure;
+    text-align: center;
+    position: absolute;
+    top: 5vh;
+    left: 25vw;
+    font-size: 45px;
+}
+
+.cont1 {
+    height: 65vh;
+    width: 35vw;
+    position: absolute;
+    top: 16vh;
+    left: 15vw;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+#code_id h1,
+#forgot h1 {
+    position: absolute;
+    top: 6vh;
+    font-size: 40px;
+}
+
+#code_id form,
+#forgot form {
+    position: absolute;
+    top: 15vh;
+}
+
+#code_id form input,
+#forgot form input {
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    width: 15vw;
+    font-size: 13px;
+}
+
+#code_id form #sub,
+#forgot form #sub {
+    background-color: gold;
+    border: 2px solid gold;
+    color: black;
+    height: 5vh;
+    width: 8vw;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#forgot{
+    left: 50vw;
+}
+
+.container1 .cross{
+    display: inline-block;
+    position: absolute;
+    right: 1vw;
+    top: 2vh;
+    cursor: pointer;
+}
+
+.eye {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#eye3,
+#eye4 {
+    left: 14vw;
+}

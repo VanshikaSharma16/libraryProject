@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url(../imgs/background.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container #main_hd {
+    color: azure;
+    position: absolute;
+    top: 2.5vh;
+    left: 25vw;
+    font-size: 45px;
+}
+
+.alert {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cont {
+    height: 75.5vh;
+    width: 35vw;
+    position: absolute;
+    top: 13vh;
+    left: 15vw;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+#login h1,
+#signup h1 {
+    position: absolute;
+    top: 6vh;
+    font-size: 40px;
+}
+
+#login form,
+#signup form {
+    position: absolute;
+    top: 17vh;
+}
+
+#login form input,
+#signup form input {
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
+    width: 17vw;
+    font-size: 13px;
+}
+
+#login form #forg {
+    color: cyan;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#login form #log,
+#signup form #sub {
+    background-color: gold;
+    border: 2px solid gold;
+    color: black;
+    height: 5vh;
+    width: 8vw;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.eye {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    left: 16vw;
+}
+
+.cont box-icon {
+    position: absolute;
+    left: 14.1vw;
+    padding: -10px;
+}
+
+#signup{
+    left: 50vw;
+}
+
+.cont #stud, 
+.cont #std, 
+.cont #thr, 
+.cont #tchr{
+    width: 1vw;
+}
+
+form .input__box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.input__box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input__box input {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-grey);
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input__box input:focus,
+.input__box input:valid {
+    border-color: var(--color-primary);
+}
+
+/* Select styling */
+.select-style {
+    position: relative;
+    width: 100%;
+}
+
+.select-style select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid var(--main-grey);
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    /* background-color: black; */
+    /* opacity: .5; */
+}
+
+.select-style::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    left: 230px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: black;
+}
+
+.select-style select option {
+    background-color: transparent;
+    color: white;
+}
+
+.select-style select:focus {
+    border-color: var(--color-primary);
+}

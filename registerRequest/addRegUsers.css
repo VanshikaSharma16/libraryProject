@@ -1,0 +1,223 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"); */
+
+:root {
+    --main-purple: #9b59b6;
+    --main-grey: #ccc;
+    --sub-grey: #d9d9d9;
+}
+
+/* The main div */
+.frm {
+    position: absolute;
+    top: 17vh;
+    left: 23vw;
+    padding: 3vw;
+    box-shadow: 1px 1px 15px 2px var(--main-grey);
+}
+
+/* The alert div */
+.alert {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Main heading */
+.frm h1 {
+    text-align: center;
+    color: var(--color-dark);
+}
+
+/* Form */
+.frm form {
+    position: relative;
+    width: 65vw;
+    top: 3vh;
+}
+
+form .user__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    color: var(--color-dark);
+}
+
+form .user__details .input__box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.user__details .input__box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user__details .input__box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-grey);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+    border-color: var(--color-primary);
+}
+
+/* Select styling */
+.select-style {
+    position: relative;
+    width: 100%;
+}
+
+.select-style select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--main-grey);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.select-style::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: grey;
+}
+
+.select-style select option {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.select-style select:focus {
+    border-color: var(--color-primary);
+}
+
+/* Gender details styling */
+form .category1 .category_title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .category1 .category {
+    display: flex;
+    width: 80%;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.category1 .category label {
+    display: flex;
+    align-items: center;
+}
+
+.category1 .category .dot {
+    height: 18px;
+    width: 18px;
+    background: var(--sub-grey);
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category .one,
+#dot-2:checked~.category .two {
+    border-color: var(--sub-grey);
+    background: var(--color-primary);
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+/* submit button */
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .frm {
+        left: 12vw;
+        /* top: 16vh; */
+    }
+
+    .frm form {
+        width: 77vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .frm {
+        left: 4vw;
+    }
+
+    .frm form {
+        width: 85vw;
+        height: 60vh;
+    }
+}
+
+
+@media only screen and (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user__details .input__box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .category1 .category {
+        width: 100%;
+    }
+
+    .container form .user__details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user__details::-webkit-scrollbar {
+        width: 0;
+    }
+}
